@@ -1,0 +1,33 @@
+{
+  "language": "typescript",
+  "app": "npx ts-node src/app.ts",
+  "projectId": "2b22d1b9-a808-4efc-9423-78a05d5cc1b1",
+  "sendCrashReports": "false",
+  "terraformProviders": [],
+  "terraformModules": [
+    {
+      "name": "iam-oidc",
+      "source": "terraform-aws-modules/iam/aws//modules/iam-assumable-role-with-oidc",
+      "version": "5.2.0"
+    },
+    {
+      "name": "ecs-cluster",
+      "source": "terraform-aws-modules/ecs/aws//modules/cluster",
+      "version": "5.11.3"
+    },
+    {
+      "name": "ecs-service",
+      "source": "terraform-aws-modules/ecs/aws//modules/service",
+      "version": "5.11.3"
+    },
+    {
+      "name": "alb",
+      "source": "terraform-aws-modules/alb/aws",
+      "version": "9.9.0"
+    }
+  ],
+  "context": {
+    "excludeStackIdFromLogicalIds": "true",
+    "allowSepCharsInLogicalIds": "true"
+  }
+}

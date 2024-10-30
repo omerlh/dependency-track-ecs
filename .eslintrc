@@ -1,0 +1,7 @@
+{
+  "extends": ["@osskit"],
+  "rules": {
+    "no-new": "off",
+    "import/extensions": "off"
+  }
+}

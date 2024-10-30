@@ -1,0 +1,9 @@
+{
+  "extends": "@osskit/tsconfig",
+  "compilerOptions": {
+    "outDir": "dist",
+    "module": "CommonJS"
+  },
+  "include": ["src"],
+  "ts-node": { "esm": false }
+}
